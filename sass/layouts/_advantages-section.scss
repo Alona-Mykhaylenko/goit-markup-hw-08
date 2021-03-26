@@ -1,0 +1,42 @@
+/* Секция - Наши преимущества */
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  .item {
+    width: calc((100% - 90px) / 4);
+
+    &:not(:nth-child(4n + 4)) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.advantages-list .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.advantages-list .text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.advantages-icon-bg {
+  background: #f5f4fa;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+}
+
+.advantages-icon {
+  width: 70px;
+  height: 70px;
+}

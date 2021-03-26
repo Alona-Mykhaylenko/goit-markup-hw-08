@@ -1,0 +1,245 @@
+/* =================Модальное окно================== */
+.modal-backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  background: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+
+  /*Переходы для эффектов ховера и фокуса*/
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 528px;
+  height: 581px;
+
+  background: var(--body-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transform: translate(-50%, -50%) scale(1);
+
+  /*Переходы для эффектов ховера и фокуса*/
+  transition-property: transform, scale;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  padding-top: 6px;
+  padding-right: 7px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.modal-backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.5);
+}
+
+.modal-close-button-icon:hover,
+.modal-close-button-icon:focus {
+  fill: var(--accent-color);
+}
+
+/* Оформление формы */
+.modal-form {
+  padding: 40px 40px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  .text {
+    margin-bottom: 12px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+  }
+}
+
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  margin-bottom: 10px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  /*Переходы для эффектов ховера и фокуса*/
+  transition-property: outline, border-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
+}
+
+.modal-form-input:focus + .modal-form-icon {
+  fill: var(--accent-color);
+}
+
+.modal-form-label {
+  margin-bottom: 4px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+
+  letter-spacing: 0.01em;
+
+  color: #757575;
+}
+
+.modal-form-comment-box {
+  margin-bottom: 30px;
+
+  padding: 12px 16px;
+  resize: none;
+  height: 96px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.user-agreement-link {
+  text-decoration-line: underline;
+  color: #2196f3;
+}
+
+.user-agreement-checkbox {
+  margin-bottom: 30px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+.modal-form-button {
+  padding: 10px 55px;
+  width: 200px;
+  height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  border-image: initial;
+
+  border-width: 0;
+  border-style: no-button;
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    /*Переходы для эффектов ховера и фокуса*/
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+  }
+}
+
+.modal-form-icon {
+  position: absolute;
+  top: 30%;
+  left: 15px;
+  display: block;
+}
+
+.modal-form-input-box {
+  position: relative;
+}
+
+/* Кастомный чек бокс */
+.user-agreement-checkbox::before {
+  display: inline-block;
+  content: '';
+  width: 16px;
+  height: 15px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+
+  margin-right: 7px;
+  padding-top: 10px;
+  margin-bottom: -2px;
+
+  .user-agreement-checkbox-box:checked + & {
+    background-image: url(../images/check.svg);
+    background-repeat: no-repeat;
+    background-size: 11px;
+    background-position: center;
+  }
+}
+
+.user-agreement-checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.user-agreement-checkbox-box {
+  transform: translateX(-500%);
+}

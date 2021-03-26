@@ -1,0 +1,47 @@
+/* ______________PORTFOLIO HTML________________ */
+
+/* Верхнее меню кнопок (фильтр содержимого страницы) */
+
+.button-secondary {
+  padding: 6px 22px;
+
+  color: var(--title-text-color);
+  border-color: var(--secondary-bg-color);
+  border-color: var(--secondary-bg-color);
+  border-image: initial;
+  border-width: 0;
+  border-style: no-button;
+
+  font-family: Roboto;
+  font-weight: 500;
+  font-style: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+
+  /*Переходы для эффектов ховера и фокуса*/
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-bg-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
+}
+
+.filter-list {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+
+  .item + .item {
+    margin-left: 8px;
+  }
+}
