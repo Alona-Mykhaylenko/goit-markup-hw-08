@@ -7,7 +7,7 @@
 
   color: var(--title-text-color);
   border-color: var(--secondary-bg-color);
-  border-color: var(--secondary-bg-color);
+  background-color: #f5f4fa;
   border-image: initial;
   border-width: 0;
   border-style: no-button;
@@ -48,6 +48,26 @@
 
   .item + .item:not(:nth-child(4)) {
     margin-left: 8px;
+  }
+}
+
+@media (min-width: 768px) {
+  .filter-list {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .item:not(:nth-child(-n + 3)) {
+      margin-top: 0;
+    }
+
+    .item + .item {
+      margin-left: 8px;
+    }
+  }
+  .button-secondary {
+    background: #f5f4fa;
   }
 }
 

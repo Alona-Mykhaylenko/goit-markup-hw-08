@@ -54,3 +54,36 @@
     margin-bottom: 16px;
   }
 }
+
+@media (min-width: 768px) {
+  .team-section .section-title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--title-text-color);
+    opacity: 1;
+  }
+
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .item {
+      width: calc((100% - 30px) / 2);
+
+      &:nth-child(3),
+      &:nth-child(4) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .team-member-info {
+    padding-bottom: 24px;
+  }
+}

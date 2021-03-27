@@ -245,6 +245,25 @@
   transform: translateX(-500%);
 }
 
+@media (min-width: 768px) {
+  .modal-form {
+    height: 609px;
+  }
+  .modal-form-icon {
+    width: 18px;
+    height: 18px;
+    top: 20%;
+  }
+
+  .modal-form .text {
+    line-height: 1.5;
+  }
+
+  .modal-form-input {
+    margin-bottom: 20px;
+  }
+}
+
 // .modal-backdrop {
 //   position: fixed;
 //   width: 100%;

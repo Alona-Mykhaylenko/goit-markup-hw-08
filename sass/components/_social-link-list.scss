@@ -52,6 +52,13 @@
   //   }
 }
 
+@media (min-width: 768px) {
+  .team-member-social-link-list {
+    padding-right: 74px;
+    padding-left: 74px;
+  }
+}
+
 // .team-member-social-link-list {
 //   display: flex;
 //   justify-content: space-between;

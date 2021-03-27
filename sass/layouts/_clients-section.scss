@@ -57,6 +57,18 @@
     fill: var(--accent-color);
   }
 }
+
+@media (min-width: 768px) {
+  .clients-list {
+    li:nth-child(n + 3) {
+      margin-bottom: 0;
+    }
+
+    .link {
+      width: 226px;
+    }
+  }
+}
 // /* ============КОНЕЦ Секция Постоянные клиенты============ */
 
 // .clients-section {
