@@ -1,4 +1,63 @@
 /* ============Секция Постоянные клиенты============ */
+.clients-section {
+  text-align: center;
+
+  .section-title {
+    margin-bottom: 30px;
+
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.178;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+}
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  li:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
+
+  .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 90px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+
+    /*Переходы для эффектов ховера и фокуса*/
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+
+    &:focus {
+      border-color: var(--accent-color);
+    }
+  }
+}
+
+.clients-logo-icon {
+  display: flex;
+  fill: #afb1b8;
+
+  /*Переходы для эффектов ховера и фокуса*/
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+
+  .clients-list .link:focus & {
+    fill: var(--accent-color);
+  }
+}
+// /* ============КОНЕЦ Секция Постоянные клиенты============ */
 
 // .clients-section {
 //   text-align: center;
