@@ -42,24 +42,38 @@
       background-color: var(--button-accent-color);
     }
   }
+
+  .hero-container {
+    padding-top: 118px;
+  }
 }
 
-.hero-container {
-  padding-top: 118px;
+.overlay {
+  max-width: 100%;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/background-m@1x.jpg');
+  background-color: grey;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
 }
 
-// @media (min-width: 1200px) and (min-device-pixel-ratio: 1),
-//   screen and (min-resolution: 96dpi),
-//   screen and (min-resolution: 1dppx) {
-//   .overlay {
-//     background-image: linear-gradient(
-//         to right,
-//         rgba(47, 48, 58, 0.4),
-//         rgba(47, 48, 58, 0.4)
-//       ),
-//       url('../images/background-d@1x.jpg');
-//   }
-// }
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 480px),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/background-m@2x.jpg');
+  }
+}
 
 // @media (min-width: 768px) and (min-device-pixel-ratio: 1),
 //   screen and (min-resolution: 96dpi),
@@ -87,41 +101,35 @@
 //   }
 // }
 
-.overlay {
-  max-width: 100%;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url('../images/background-m@1x.jpg');
-  background-color: grey;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 400px;
-}
-
-@media (min-width: 480px) and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 1),
+  screen and (min-resolution: 96dpi),
+  screen and (min-resolution: 1dppx) {
   .overlay {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('../images/background-m@2x.jpg');
+      url('../images/background-d@1x.jpg');
   }
 }
 
 @media (min-width: 1200px) {
-  .hero-container {
-    padding-top: 200px;
+  .hero .hero-container {
+    padding-top: 212px;
     padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .overlay {
     max-width: 1600px;
     height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero .hero-title {
+    font-size: 33px;
   }
 }

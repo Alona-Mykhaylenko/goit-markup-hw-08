@@ -198,11 +198,11 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
   }
 
   .footer-list {
     margin-right: 165px;
-    padding-left: 76px;
   }
 
   .footer-social-links-box {
@@ -212,10 +212,6 @@
 
   .email-field {
     width: 450px;
-  }
-
-  .subscribe-form-box {
-    padding-left: 150px;
   }
 }
 
@@ -249,7 +245,7 @@
 
   /* Футер форма контактов */
   .subscribe-form-box {
-    margin-left: 93px;
+    margin-left: auto;
     padding-top: 72px;
     padding-left: 0;
     padding-bottom: 20px;
@@ -259,13 +255,13 @@
 
   .subscribe-form {
     display: flex;
-  }
 
-  .subscribe-form .email-field {
-    width: 358px;
-    padding: 15px 16px;
-    margin-right: 12px;
-    margin-bottom: 20px;
+    .email-field {
+      width: 358px;
+      padding: 15px 16px;
+      margin-right: 12px;
+      margin-bottom: 20px;
+    }
   }
 }
 
