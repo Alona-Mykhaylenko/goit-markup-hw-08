@@ -13,43 +13,16 @@
   background-color: transparent;
   width: 44px;
   height: 44px;
-
-  //   /*Переходы для эффектов ховера и фокуса*/
-  //   transition-property: background-color;
-  //   transition-duration: 250ms;
-  //   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  //   transition-delay: 0;
-
-  //   &:hover,
-  //   &:focus {
-  //     background-color: var(--accent-color);
-  //   }
 }
 
 .social-icon {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
-
-  //   /*Переходы для эффектов ховера и фокуса*/
-  //   transition-property: fill;
-  //   transition-duration: 250ms;
-  //   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  //   transition-delay: 0;
-
-  //   .bg-circle:hover &,
-  //   .bg-circle:focus & {
-  //     fill: var(--primary-bg-color);
-  //   }
 }
 
 .footer-social-links-list .bg-circle {
   background-color: rgba(255, 255, 255, 0.1);
-
-  //   &:hover,
-  //   &:focus {
-  //     background-color: var(--accent-color);
-  //   }
 }
 
 @media (min-width: 768px) {
@@ -59,56 +32,46 @@
   }
 }
 
-// .team-member-social-link-list {
-//   display: flex;
-//   justify-content: space-between;
-//   padding-right: 32px;
-//   padding-left: 32px;
-// }
+@media (min-width: 1200px) {
+  .team-member-social-link-list {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
 
-// .bg-circle {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   border-radius: 50%;
-//   background-color: transparent;
-//   width: 44px;
-//   height: 44px;
+  .bg-circle {
+    /*Переходы для эффектов ховера и фокуса*/
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
 
-//   /*Переходы для эффектов ховера и фокуса*/
-//   transition-property: background-color;
-//   transition-duration: 250ms;
-//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-//   transition-delay: 0;
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
 
-//   &:hover,
-//   &:focus {
-//     background-color: var(--accent-color);
-//   }
-// }
+  .social-icon {
+    /*Переходы для эффектов ховера и фокуса*/
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
 
-// .social-icon {
-//   width: 20px;
-//   height: 20px;
-//   fill: #afb1b8;
+    .bg-circle:hover &,
+    .bg-circle:focus & {
+      fill: var(--primary-bg-color);
+    }
+  }
 
-//   /*Переходы для эффектов ховера и фокуса*/
-//   transition-property: fill;
-//   transition-duration: 250ms;
-//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-//   transition-delay: 0;
+  .footer-social-links-list .bg-circle {
+    background-color: rgba(255, 255, 255, 0.1);
 
-//   .bg-circle:hover &,
-//   .bg-circle:focus & {
-//     fill: var(--primary-bg-color);
-//   }
-// }
-
-// .footer-social-links-list .bg-circle {
-//   background-color: rgba(255, 255, 255, 0.1);
-
-//   &:hover,
-//   &:focus {
-//     background-color: var(--accent-color);
-//   }
-// }
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
+}

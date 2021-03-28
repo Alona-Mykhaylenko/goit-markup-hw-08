@@ -71,6 +71,15 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+
 /* Верхнее меню кнопок (фильтр содержимого страницы) */
 
 // .button-secondary {

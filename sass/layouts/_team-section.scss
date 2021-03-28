@@ -87,3 +87,28 @@
     padding-bottom: 24px;
   }
 }
+
+@media (min-width: 1200px) {
+  .team-section .section-title {
+    font-size: 33px;
+    margin-bottom: 50px;
+  }
+
+  .team-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    .item {
+      width: calc((100% - 90px) / 4);
+    }
+  }
+
+  .team-member-info {
+    padding-bottom: 30px;
+  }
+
+  .team-section .team-list .item {
+    margin-bottom: 0;
+  }
+}
