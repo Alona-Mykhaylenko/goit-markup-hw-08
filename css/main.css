@@ -61,13 +61,13 @@ img {
 
 @media (min-width: 768px) {
   .container {
-    width: 768px;
+    min-width: 768px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    width: 1200px;
+    min-width: 1200px;
   }
 }
 
@@ -840,8 +840,8 @@ img {
   color: var(--body-bg-color);
 }
 
-.email-field {
-  width: 100%;
+.subscribe-form .email-field {
+  width: 415px;
   padding: 15px 16px;
   margin-right: 12px;
   margin-bottom: 20px;
@@ -857,7 +857,7 @@ img {
   transition-delay: 0;
 }
 
-.email-field:focus {
+.subscribe-form .email-field:focus {
   border-color: var(--accent-color);
 }
 
@@ -918,7 +918,7 @@ img {
   .subscribe-form {
     display: flex;
   }
-  .email-field {
+  .subscribe-form .email-field {
     width: 358px;
     padding: 15px 16px;
     margin-right: 12px;
@@ -1043,6 +1043,10 @@ img {
   margin-bottom: 0;
 }
 
+.project-list > .item:nth-last-child(-n + 2) {
+  margin-top: 30px;
+}
+
 .project-name {
   padding: 20px 24px;
 }
@@ -1088,7 +1092,7 @@ img {
     flex-wrap: wrap;
   }
   .project-list .item {
-    width: 354px;
+    width: calc((100% - 30px) / 2);
   }
 }
 
@@ -1320,7 +1324,7 @@ img {
 }
 
 @media (min-width: 768px) {
-  .modal-form {
+  .modal {
     height: 609px;
   }
   .modal-form-icon {
