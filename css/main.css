@@ -109,12 +109,14 @@ img {
   .header-contacts {
     display: none;
   }
+  .header-section .container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 
 .logo {
   display: inline-block;
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 
 .mobile-menu {
@@ -1092,6 +1094,7 @@ img {
   .footer-social-links-box {
     margin: 0;
     padding: 0;
+    padding-bottom: 33px;
   }
   .subscribe-form .email-field {
     width: 450px;
