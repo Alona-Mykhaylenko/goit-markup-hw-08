@@ -162,7 +162,8 @@
   color: var(--body-bg-color);
 }
 
-.subscribe-form .email-field {
+.subscribe-form > .email-field {
+  box-sizing: border-box;
   width: 450px;
   padding: 15px 16px;
   // margin-right: 12px;
@@ -207,6 +208,7 @@
 
   .subscribe-form .email-field {
     width: 450px;
+    box-sizing: border-box;
   }
 }
 

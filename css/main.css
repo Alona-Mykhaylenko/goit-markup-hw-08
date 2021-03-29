@@ -102,7 +102,7 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .site-navigation {
     display: none;
   }
@@ -1057,7 +1057,8 @@ img {
   color: var(--body-bg-color);
 }
 
-.subscribe-form .email-field {
+.subscribe-form > .email-field {
+  box-sizing: border-box;
   width: 450px;
   padding: 15px 16px;
   margin-bottom: 20px;
@@ -1073,7 +1074,7 @@ img {
   transition-delay: 0;
 }
 
-.subscribe-form .email-field:focus, .subscribe-form .email-field:hover {
+.subscribe-form > .email-field:focus, .subscribe-form > .email-field:hover {
   border-color: var(--accent-color);
 }
 
@@ -1093,6 +1094,7 @@ img {
   }
   .subscribe-form .email-field {
     width: 450px;
+    box-sizing: border-box;
   }
 }
 
