@@ -32,6 +32,10 @@
   .mobile-menu-portfolio {
     z-index: 5;
   }
+
+  .site-nav_item .link:focus {
+    color: var(--accent-color);
+  }
 }
 
 .logo {
