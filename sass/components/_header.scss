@@ -240,11 +240,11 @@
       &:focus {
         color: var(--accent-color);
       }
-
-      .current {
-        color: var(--accent-color);
-      }
     }
+  }
+
+  .site-navigation .current {
+    color: var(--accent-color);
   }
 
   .header-contacts {

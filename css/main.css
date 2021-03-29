@@ -316,7 +316,7 @@ img {
   .site-navigation .link:hover, .site-navigation .link:focus {
     color: var(--accent-color);
   }
-  .site-navigation .link .current {
+  .site-navigation .current {
     color: var(--accent-color);
   }
   .header-contacts {
