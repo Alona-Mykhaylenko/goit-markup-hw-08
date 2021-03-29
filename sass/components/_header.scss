@@ -17,6 +17,7 @@
 }
 
 .mobile-menu {
+  box-sizing: border-box;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -26,7 +27,7 @@
   height: 796px;
   top: 0;
   left: 0;
-  background-color: var(--primary-bg-color);
+  background-color: #ffffff;
   padding: 48px 40px;
 }
 
