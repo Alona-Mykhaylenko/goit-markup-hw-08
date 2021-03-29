@@ -45,6 +45,7 @@
 
   .hero-container {
     padding-top: 118px;
+    padding-bottom: 118px;
   }
 }
 
@@ -56,13 +57,14 @@
       rgba(47, 48, 58, 0.4)
     ),
     url('../images/background-m@1x.jpg');
+
   background-color: grey;
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 480px),
+@media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .overlay {
@@ -75,42 +77,27 @@
   }
 }
 
-// @media (min-width: 768px) and (min-device-pixel-ratio: 1),
-//   screen and (min-resolution: 96dpi),
-//   screen and (min-resolution: 1dppx) {
-//   .overlay {
-//     background-image: linear-gradient(
-//         to right,
-//         rgba(47, 48, 58, 0.4),
-//         rgba(47, 48, 58, 0.4)
-//       ),
-//       url('../images/background-m@1x.jpg');
-//   }
-// }
-
-// @media (min-width: 768px) and (min-device-pixel-ratio: 2),
-//   screen and (min-resolution: 192dpi),
-//   screen and (min-resolution: 2dppx) {
-//   .overlay {
-//     background-image: linear-gradient(
-//         to right,
-//         rgba(47, 48, 58, 0.4),
-//         rgba(47, 48, 58, 0.4)
-//       ),
-//       url('../images/background-t@2x.jpg');
-//   }
-// }
-
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 1),
-  screen and (min-resolution: 96dpi),
-  screen and (min-resolution: 1dppx) {
+@media screen and (min-width: 768px) {
   .overlay {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('../images/background-d@1x.jpg');
+      url('../images/background-tab@1x.jpg');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .overlay {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../images/background-tab@2x.jpg');
+    }
   }
 }
 
@@ -122,14 +109,34 @@
     margin-right: auto;
   }
 
+  .hero .hero-title {
+    font-size: 33px;
+  }
+
   .overlay {
     max-width: 1600px;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/background-desk@1x.jpg');
   }
 
-  .hero .hero-title {
-    font-size: 33px;
+  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .overlay {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../images/background-desk@2x.jpg');
+    }
   }
 }

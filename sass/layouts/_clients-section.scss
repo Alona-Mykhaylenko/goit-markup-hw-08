@@ -13,6 +13,21 @@
   }
 }
 
+@media screen and (max-width: 480px) {
+  .clients-list {
+    display: block;
+
+    li:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    li {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
+
 .clients-list {
   display: flex;
   flex-wrap: wrap;
@@ -53,7 +68,8 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
 
-  .clients-list .link:focus & {
+  .clients-list .link:focus &,
+  .clients-list .link:hover & {
     fill: var(--accent-color);
   }
 }
