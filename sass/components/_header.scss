@@ -36,6 +36,10 @@
   padding: 48px 40px;
 }
 
+.mobile-menu-portfolio {
+  z-index: 5;
+}
+
 .is-open {
   opacity: 1;
   visibility: visible;
