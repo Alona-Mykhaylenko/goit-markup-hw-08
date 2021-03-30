@@ -120,11 +120,12 @@ img {
     pointer-events: none;
     position: fixed;
     width: 100vw;
-    height: 796px;
+    height: 100vw;
     top: 0;
     left: 0;
     background-color: #ffffff;
     padding: 48px 40px;
+    transition: all 250ms linear;
   }
   .mobile-menu-portfolio {
     z-index: 5;
@@ -145,11 +146,12 @@ img {
   pointer-events: none;
   position: fixed;
   width: 100vw;
-  height: 796px;
+  height: 100%;
   top: 0;
   left: 0;
   background-color: #ffffff;
   padding: 48px 40px;
+  overflow-y: scroll;
 }
 
 .is-open {
@@ -505,7 +507,7 @@ img {
     margin-right: auto;
   }
   .hero .hero-title {
-    font-size: 33px;
+    font-size: 40px;
   }
   .overlay {
     max-width: 1600px;
@@ -1371,6 +1373,15 @@ img {
   transition-delay: 0;
 }
 
+@media (max-width: 480px) {
+  .modal {
+    width: 100vw;
+    max-width: 450px;
+    height: 100vw;
+    overflow-y: scroll;
+  }
+}
+
 .modal-close-button {
   position: absolute;
   top: 8px;
@@ -1544,8 +1555,13 @@ img {
 
 .user-agreement-checkbox-container {
   display: flex;
-  width: 400px;
   transform: translateX(-10px);
+}
+
+@media (min-width: 481px) {
+  .user-agreement-checkbox-container {
+    width: 400px;
+  }
 }
 
 .user-agreement-checkbox-box {

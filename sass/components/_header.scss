@@ -22,11 +22,13 @@
 
     position: fixed;
     width: 100vw;
-    height: 796px;
+    height: 100vw;
     top: 0;
     left: 0;
     background-color: #ffffff;
     padding: 48px 40px;
+
+    transition: all 250ms linear;
   }
 
   .mobile-menu-portfolio {
@@ -52,11 +54,13 @@
 
   position: fixed;
   width: 100vw;
-  height: 796px;
+  height: 100%;
   top: 0;
   left: 0;
   background-color: #ffffff;
   padding: 48px 40px;
+
+  overflow-y: scroll;
 }
 
 .is-open {
